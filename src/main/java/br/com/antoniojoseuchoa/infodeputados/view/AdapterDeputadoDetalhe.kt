@@ -1,14 +1,10 @@
 package br.com.antoniojoseuchoa.infodeputados.view
 
 import android.content.Context
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import br.com.antoniojoseuchoa.infodeputados.DetalhesDeputadoActivity
 import br.com.antoniojoseuchoa.infodeputados.databinding.ItemDeputadoBinding
-import br.com.antoniojoseuchoa.infodeputados.domain.Dado
-import br.com.antoniojoseuchoa.infodeputados.domain.Deputado
 import br.com.antoniojoseuchoa.infodeputados.domain.deputadodetalhe.DeputadoDetalhe
 import com.bumptech.glide.Glide
 
@@ -24,6 +20,7 @@ class AdapterDeputadoDetalhe(val context: Context, var list: MutableList<Deputad
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             val item = list[position]
+            holder.binding.tvIdDeputado.text = item.dados.id.toString()
             holder.binding.tvNomeDeputado.text = item.dados.nomeCivil
             holder.binding.tvPartido.text = item.dados.ultimoStatus.siglaPartido
             Glide.with(holder.binding.root.context).load( item.dados.ultimoStatus.urlFoto ).into(holder.binding.ivFotoDeputado)

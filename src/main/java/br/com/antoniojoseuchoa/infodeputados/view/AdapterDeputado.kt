@@ -28,6 +28,7 @@ class AdapterDeputado(val context: Context, var list: MutableList<Deputado>): Re
 
     open class ViewHolder(val binding: ItemDeputadoBinding): RecyclerView.ViewHolder(binding.root){
             fun bind(item: Deputado){
+                 binding.tvIdDeputado.text = item.id.toString()
                  binding.tvNomeDeputado.text = item.nome
                  binding.tvPartido.text = item.siglaPartido
                  Glide.with(binding.root.context).load( item.urlFoto ).into(binding.ivFotoDeputado)

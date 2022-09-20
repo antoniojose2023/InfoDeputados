@@ -160,15 +160,14 @@ class MainActivity : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListener,
 
         view.btSiteDeputadoDialog.setOnClickListener {
             val url: String? = deputadoDetalhe.dados.urlWebsite
-            if (url != null) {
-                if(url.isEmpty() ){
+
+                if(url == null){
                     Toast.makeText(this, "Site não existente", Toast.LENGTH_LONG).show()
                 }else{
                     val intent = Intent(Intent.ACTION_VIEW)
                     intent.setData(Uri.parse( url ))
                     startActivity( intent )
                 }
-            }
 
         }
 
