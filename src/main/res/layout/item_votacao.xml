@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!--    val id: String,-->
+        <!--    val uri: String,-->
+        <!--    val data: String,-->
+        <!--    val dataHoraRegistro: String,-->
+        <!--    val siglaOrgao: SiglaOrgao,-->
+        <!--    val uriOrgao: String,-->
+        <!--    val uriEvento: String? = null,-->
+        <!--    val proposicaoObjeto: String? = null,-->
+        <!--    val uriProposicaoObjeto: String? = null,-->
+        <!--    val descricao: String,-->
+        <!--    val aprovacao: Long? = null-->
+
+        <TextView
+            android:id="@+id/tv_proposicao_votacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="proposicao"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_descricao_votacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="descricao"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_aprovado_votacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aprovacao"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_data_votacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data"
+            android:textAlignment="textEnd"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

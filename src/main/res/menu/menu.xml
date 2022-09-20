@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_opcoes"
+        android:title="Opções"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_menu_opcoes">
+
+        <menu>
+
+            <item
+                android:id="@+id/menu_eventos"
+                android:title="Eventos"
+                app:showAsAction="never"
+                />
+
+            <item
+                android:id="@+id/menu_proposicoes"
+                android:title="Proposições"
+                app:showAsAction="never"
+                />
+
+            <item
+                android:id="@+id/menu_votaçao"
+                android:title="Votação"
+                app:showAsAction="never"
+                />
+        </menu>
+
+    </item>
+
+</menu>

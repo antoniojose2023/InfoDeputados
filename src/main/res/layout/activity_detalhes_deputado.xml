@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetalhesDeputadoActivity"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/iv_fechar"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_close"/>
+
+        <ImageView
+            android:id="@+id/iv_foto_deputado_detalhes"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOME :"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="14dp"/>
+
+        <TextView
+            android:id="@+id/tv_nome_deputado_detalhes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="nome"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/acmeregular"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/cor_barra"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PARTIDO :"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_partido_deputado_detalhes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Partido"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/acmeregular"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/cor_barra"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UF :"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_nome_uf_detalhes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="uf"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/acmeregular"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/cor_barra"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SITUAÇÃO :"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_situacao_deputado_detalhes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Situação"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/acmeregular"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/cor_barra"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONDIÇÃO ELEITORAL :"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_condicao_eleitoral_deputado_detalhes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Condição eleitoral"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/acmeregular"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/cor_barra"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ESCOLARIDADE :"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_escolaridade_deputado_detalhes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Escolaridade"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/acmeregular"/>
+
+
+        <Button
+            android:id="@+id/button_despesas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:text="Visualizar Despesas"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
